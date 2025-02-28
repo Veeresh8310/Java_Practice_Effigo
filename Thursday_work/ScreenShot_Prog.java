@@ -9,12 +9,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-public class ScreenShot_Prog {
+public class Auto_Suggestion {
 	
 	public static void main(String[] args)
 	{
 		
-		 
 	     ChromeDriver driver=new ChromeDriver();
 	     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(300));
 	     driver.get("https://www.google.com");
@@ -27,16 +26,8 @@ public class ScreenShot_Prog {
 	    	String su=s.getText();
 	    	System.out.println(su);
 	    }
-	     
-	
-	     
 
-	    
-	     driver.close();
-	     
-	    
-	     
-	     
+	     driver.close();    
 		
 	}
 	
