@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  
+  <groups>
+  <run>
+  <include name="Regression"/>
+     <exclude name="Sanitary"/>
+  </run>
+  </groups>
+  
+  <!--  <groups>
+  <run>
+  <include name="Sanitary"/>
+   <include name="Regression"/>
+  </run>
+  </groups> -->
+  
+  <!--   <groups>
+  <run>
+  <include name="Sanitary"/>
+     <exclude name="Regression"/>
+  </run>
+  </groups> -->
+  
+    <classes>
+      <class name="Grouping_Testing.Sanitary_Group"/>
+      <class name="Grouping_Testing.Regression"/>
+      <class name="Grouping_Testing.SanandReg_Grouping"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
