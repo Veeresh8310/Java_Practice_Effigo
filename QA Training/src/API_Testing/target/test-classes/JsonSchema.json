@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome3",
+    "definitions": {
+        "Welcome3": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "countries": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Country"
+                    }
+                }
+            },
+            "required": [
+                "countries"
+            ],
+            "title": "Welcome3"
+        },
+        "Country": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "code": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "mapType": {
+                    "type": "string"
+                },
+                "empty": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "Country"
+        }
+    }
+}
